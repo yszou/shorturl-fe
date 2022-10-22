@@ -4,4 +4,4 @@ node_modules/
 .idea/
 .umi
 .umi-production
-
+build/
