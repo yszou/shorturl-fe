@@ -1,0 +1,32 @@
+@import '../Base/index';
+
+.@{PREFIX}PageDemo{
+  height: 100vh;
+  > .wrapper {
+    width: 900px;
+    display: table;
+    height: 100%;
+    margin: auto;
+    > .inner {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      > .title {
+        font-size: 16px;
+        color: #1890ff;
+        margin: 10px 0;
+      }
+      > .btn {
+        margin: 20px 0;
+      }
+      > .output {
+        margin-top: 40px;
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px dashed #1890ff;
+        width: 100%;
+      }
+    }
+  }
+}
