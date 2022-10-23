@@ -18,6 +18,11 @@ export class Config {
   }
 
   static getEnv(): ENV_TYPE {
+    const env = document.body.getAttribute('env') as ENV_TYPE;
+    if (env) {
+      return ENV[env] || ENV.PUBLISH;
+    }
+
     const { hostname } = window.location;
     if (hostname === 'localhost') {
       return ENV.LOCAL;
